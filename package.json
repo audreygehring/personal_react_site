@@ -2,6 +2,10 @@
   "name": "personal_react_site",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "7.2.0",
+    "npm": "3.10.9"
+  },
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
