@@ -39,7 +39,10 @@ class App extends React.Component {
     };
     return (
       <div>
-        <h1> Audrey Gehring </h1>
+        <div>
+          <h1>Audrey Gehring</h1>
+        </div>
+
         <About
           clickedStatus={this.state.aboutClicked}
           aboutClick={aboutClick}
