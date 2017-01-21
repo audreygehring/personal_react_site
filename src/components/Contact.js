@@ -11,7 +11,7 @@ const Contact = props => {
   return (
     <div>
       <div>
-        <h2 onClick={props.contactClick}>Contact</h2>
+        <h2 onClick={props.contactClick}>contact</h2>
         <h3> {contactAudrey} </h3>
       </div>
     </div>

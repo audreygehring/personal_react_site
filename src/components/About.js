@@ -11,7 +11,7 @@ const About = props => {
   return (
     <div>
       <div>
-        <h2 onClick={props.aboutClick}>About</h2>
+        <h2 onClick={props.aboutClick}>about</h2>
         <h3> {aboutAudrey} </h3>
       </div>
     </div>
