@@ -11,8 +11,14 @@ const About = props => {
   return (
     <div>
       <div>
-        <h2 onClick={props.aboutClick}>about</h2>
-        <h3> {aboutAudrey} </h3>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h2 onClick={props.aboutClick}>about</h2>
+              <p> {aboutAudrey} </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
