@@ -13,7 +13,7 @@ const About = props => {
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-sm-6">
               <h2 onClick={props.aboutClick}>about</h2>
               <p> {aboutAudrey} </p>
             </div>

@@ -5,7 +5,11 @@ const Contact = props => {
   if (props.clickedStatus == false ) {
     contactAudrey = "";
   } else {
-    contactAudrey = "Github Logo - LinkedIn Logo";
+    contactAudrey = <div>
+                      <a href={props.gitHubLink} target="_blank">Github</a>
+                      <br/>
+                      <a href={props.linkedInLink} target="_blank">LinkedIn</a>
+                    </div>;
   }
 
   return (
@@ -13,7 +17,7 @@ const Contact = props => {
       <div className="row">
         <div className="col-md-6">
           <h2 onClick={props.contactClick}>contact</h2>
-          <p> {contactAudrey} </p>
+          {contactAudrey}
         </div>
       </div>
     </div>
