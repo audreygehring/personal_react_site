@@ -37,21 +37,27 @@ class App extends React.Component {
     let contactClick = () => {
       this.handleContactClick();
     };
+    
     return (
       <div>
-        <div>
-          <h1>Audrey Gehring</h1>
+        <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+          <a className="navbar-brand">Audrey</a>
+        </nav>
+          <div className="container">
+            <div className="starter-template">
+            <h1>Audrey Gehring</h1>
+            <img src={"./images/IMG_9482.JPG"} className="img-fluid" alt="profile photo"></img>
+              <About
+                clickedStatus={this.state.aboutClicked}
+                aboutClick={aboutClick}
+              />
+
+            <Contact
+              clickedStatus={this.state.contactClicked}
+              contactClick={contactClick}
+            />
+          </div>
         </div>
-
-        <About
-          clickedStatus={this.state.aboutClicked}
-          aboutClick={aboutClick}
-        />
-
-        <Contact
-          clickedStatus={this.state.contactClicked}
-          contactClick={contactClick}
-        />
       </div>
     );
   }
