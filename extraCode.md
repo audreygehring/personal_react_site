@@ -27,3 +27,5 @@
 //   } else {
 //     contactAudrey = "";
 //   }
+
+<img src="http://imgur.com/a/8vuvM" className="img-fluid" alt="profile photo"></img>

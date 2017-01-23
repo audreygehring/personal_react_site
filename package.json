@@ -1,6 +1,10 @@
 {
   "name": "personal_react_site",
   "version": "1.0.0",
+  "engines": {
+    "node": "7.2.0",
+    "npm": "3.10.9"
+  },
   "description": "",
   "engines": {
     "node": "7.2.0",
