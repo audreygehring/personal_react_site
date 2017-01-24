@@ -28,4 +28,4 @@
 //     contactAudrey = "";
 //   }
 
-<img src="http://imgur.com/a/8vuvM" className="img-fluid" alt="profile photo"></img>
+// <img src="http://i.imgur.com/xvgPtWG.jpg" className="img-fluid" alt="profile photo"></img>
