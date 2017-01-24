@@ -5,18 +5,20 @@ const Interest = props => {
   if (props.clickedStatus == false ) {
     audreyInterests = "";
   } else {
-    audreyInterests = <div>
-                        <a href={props.rescueLink} target="_blank">Animal Rescue</a>
+    audreyInterests = <blockquote>
+                        <a href={props.rescueLink} target="_blank">Dog Rescue</a>
                         <br/>
                         <a href={props.settlersLink} target="_blank">Settlers of Catan</a>
-                      </div>;
+                        <br/>
+                        <a href={props.harryPotterLink} target="_blank">Harry Potter</a>
+                      </blockquote>;
   }
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <h2 onClick={props.interestClick}>interests</h2>
-            {audreyInterests}
+            <h2> {audreyInterests} </h2>
           </div>
         </div>
       </div>

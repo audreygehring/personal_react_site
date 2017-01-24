@@ -56,35 +56,40 @@ class App extends React.Component {
     return (
       <div>
         <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-          <a className="navbar-brand">Audrey</a>
+          <a className="navbar-brand"></a>
 
         </nav>
-          <div className="container">
-            <div className="starter-template">
-            <h1>Audrey Gehring</h1>
-              <About
-                clickedStatus={this.state.aboutClicked}
-                aboutClick={aboutClick}
-              />
+        <div className="container">
+          <div className="starter-template">
+          <div className="col-sm-8">
+          <h1>Audrey Gehring</h1>
+            <About
+            clickedStatus={this.state.aboutClicked}
+            aboutClick={aboutClick}
+            />
 
             <Contact
-              clickedStatus={this.state.contactClicked}
-              contactClick={contactClick}
-              gitHubLink={"https://github.com/audreygehring"}
-              linkedInLink={"https://www.linkedin.com/in/audreygehring/"}
+            clickedStatus={this.state.contactClicked}
+            contactClick={contactClick}
+            gitHubLink={"https://github.com/audreygehring"}
+            linkedInLink={"https://www.linkedin.com/in/audreygehring/"}
             />
 
             <Interest
-              clickedStatus={this.state.interestClicked}
-              interestClick={interestClick}
-              rescueLink={"http://www.ns4ar.org/"}
-              settlersLink={"http://www.catan.com/"}
+            clickedStatus={this.state.interestClicked}
+            interestClick={interestClick}
+            rescueLink={"http://www.ns4ar.org/"}
+            settlersLink={"http://www.catan.com/"}
+            harryPotterLink={"https://www.pottermore.com/"}
             />
-
-
           </div>
+          <div className="col-sm-4">
+            <img src="http://i.imgur.com/xvgPtWG.jpg" alt="Audrey Gehring" className="img-circle"></img>
+          </div>
+
         </div>
       </div>
+    </div>
     );
   }
 }

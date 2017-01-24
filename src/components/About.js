@@ -5,7 +5,7 @@ const About = props => {
     if (props.clickedStatus == false ) {
       aboutAudrey = "";
     } else {
-      aboutAudrey = "Audrey Gehring is an aspiring web developer looking for opportunities in Boston, MA. Favorite languages include: Ruby, React.js, JavaScript and PostgreSQL";
+      aboutAudrey = <blockquote>Audrey Gehring is an aspiring full-stack web developer looking for opportunities in Boston, MA. A former human resources and benefits professional, Audrey attended the intensive Launch Academy bootcamp during the winter of 2016 in order to make an efficient career transition. </blockquote>;
     }
 
   return (
@@ -14,8 +14,8 @@ const About = props => {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <h2 onClick={props.aboutClick}>about</h2>
-              <p> {aboutAudrey} </p>
+            <h2 onClick={props.aboutClick}>about</h2>
+              <h2> {aboutAudrey} </h2>
             </div>
           </div>
         </div>
