@@ -61,7 +61,7 @@ class App extends React.Component {
         </nav>
         <div className="container">
           <div className="starter-template">
-          <div className="col-sm-8">
+          <div className="col-sm-6">
           <h1>Audrey Gehring</h1>
             <About
             clickedStatus={this.state.aboutClicked}
@@ -83,10 +83,9 @@ class App extends React.Component {
             harryPotterLink={"https://www.pottermore.com/"}
             />
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-6" align="center">
             <img src="http://i.imgur.com/xvgPtWG.jpg" alt="Audrey Gehring" className="img-circle"></img>
           </div>
-
         </div>
       </div>
     </div>
